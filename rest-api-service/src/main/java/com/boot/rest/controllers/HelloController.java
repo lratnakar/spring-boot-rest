@@ -11,4 +11,9 @@ public class HelloController {
 	public String hello(@RequestParam String user) {
 		return "Hello Mr. "+user;
 	}
+
+	@GetMapping("/welcome")
+	public String hello(@RequestParam String user) {
+		return "Welcome to Springboot Rest API - Mr. "+user;
+	}
 }
